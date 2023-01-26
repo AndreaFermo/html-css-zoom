@@ -87,5 +87,11 @@ header {
 footer {
     height: 10vh;
     width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+li {
+    display: inline-block;
 }
