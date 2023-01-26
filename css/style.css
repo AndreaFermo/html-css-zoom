@@ -6,21 +6,45 @@
 
 /*REGOLE DI DEBUG*/
 
+.debug .tratteggiato {
+    border: 3px dashed black;
+}
 
+.debug header {
+    background-color: pink;
+}
 
+.debug main {
+    background-color: yellow;
+    width: 100vw;
+    height: 80vh;
+    padding: 10vh 0px 0px 0px;
+}
 
+.debug main .container {
+    width: 90vw;
+    margin: auto;
+    background-color: orange;
+    padding: 10px;
+}
 
+.debug .guest {
+    background-color: green;
+}
 
+.debug .name {
+    background-color: gray;
+}
+
+.debug footer {
+    background-color: purple;
+}
 
 /*REGOLE CSS*/
 
 header {
-    background-color: pink;
-    height: 100px;
+    height: 10vh;
     width: 100vw;
-    position: fixed;
-    z-index: 9999;
-
 }
 
 .tools {
@@ -35,4 +59,33 @@ header {
     text-decoration: none;
     margin: 0px 3px;
     padding: 3px;
+}
+
+/*REGOLE MAIN*/
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.guest {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.name {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    padding: 5px;
+}
+
+/*REGOLE FOOTER*/
+
+footer {
+    height: 10vh;
+    width: 100vw;
+
 }
