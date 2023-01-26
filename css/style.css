@@ -10,31 +10,8 @@
     border: 3px dashed black;
 }
 
-.debug header {
-    background-color: pink;
-}
 
-.debug main {
-    background-color: yellow;
-    width: 100vw;
-    height: 80vh;
-    padding: 10vh 0px 0px 0px;
-}
 
-.debug main .container {
-    width: 90vw;
-    margin: auto;
-    background-color: orange;
-    padding: 10px;
-}
-
-.debug .guest {
-    background-color: green;
-}
-
-.debug .name {
-    background-color: gray;
-}
 
 .debug footer {
     background-color: purple;
@@ -45,41 +22,64 @@
 header {
     height: 10vh;
     width: 100vw;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 .tools {
    position: absolute;
-   top: 8px;
-   right: 0;
+   top: 15px;
+   right: 5px;
 }
 
 .tools a {
     background-color: gray;
     color: white;
     text-decoration: none;
-    margin: 0px 3px;
-    padding: 3px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /*REGOLE MAIN*/
 
+main{
+    padding: 10vh 0px;
+    background-color: black;
+}
+
 .container {
    display: flex;
    flex-wrap: wrap;
+   justify-content: center;
+   overflow: scroll;
+   width: 90vw;
+   margin: auto;
 }
+
+
 
 .guest {
     position: relative;
-    top: 0;
-    left: 0;
+    height: 150px;
+    width: 250px;
+    background-image: url(https://picsum.photos/200);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px;
 }
+
 
 .name {
     color: white;
     position: absolute;
     bottom: 30px;
-    left: 10px;
+    left: 0;
     padding: 5px;
+    background-color: rgba(98, 111, 125, 0.7);
 }
 
 /*REGOLE FOOTER*/
@@ -90,6 +90,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
 }
 
 li {
