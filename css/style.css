@@ -13,9 +13,6 @@
 
 
 
-.debug footer {
-    background-color: purple;
-}
 
 /*REGOLE CSS*/
 
@@ -95,8 +92,40 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 999;
+    background-color: rgb(34, 34, 34);
 }
 
 li {
     display: inline-block;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer i {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.green {
+    color: lightgreen;
+}
+
+.apice {
+    font-weight: bolder;
+    font-size: 30px;
+    
+    
+}
+
+.end-call {
+    line-height: 100px;
+    padding: 0 30px;
+    background-color: rgb(74, 71, 74);
+    color: red;
 }
